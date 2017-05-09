@@ -314,7 +314,6 @@ function disallowedLettersInWord(word) {
  * i.e. the word does not contain any disallowed letters
  */
 function containsOnlyAllowedLetters(word) {
-    // TODO 12
     // Return the actual answer.
     var disallowedLettersList = disallowedLettersInWord(word);
     return disallowedLettersList.length == 0;
@@ -345,8 +344,6 @@ function wordScore(word) {
     // split the word into a list of letters
     var letters = word.split("");
 
-    // TODO 19
-    // Replace the empty list below.
     // Map the list of letters into a list of scores, one for each letter.
     var letterScores = letters.map(letterScore);
 
@@ -370,7 +367,6 @@ function currentScore() {
         }
     });
 
-    // TODO 20
     // return the total sum of the word scores
     return wordScores.reduce(add, 0);
 }
